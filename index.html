@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Blogin</title>
+</head>
+<body class="main-layout">
+
+    <!-- screens -->
+    <div class="off-canvas-overlay" onclick="onToggleMobileMenu()"></div>
+    <header class="main-header full main-layout">
+        <div class="wrapper flex align-center space-between">
+            <div class="main-logo">Blogin<span class="logo-dot">.</span></div>
+            <button class="off-canvas-btn" onclick="onToggleMobileMenu()">☰</button>
+            <nav class="main-nav">
+                <ul class="main-nav-links clean-list flex">
+                    <li>
+                        <a href="#" class="main-nav-link menu-active">Journal</a>
+                        <ul class="main-nav-sub-links flex">
+                            <li><a href="#" class="main-nav-sub-link">October 2016</a></li>
+                            <li><a href="#" class="main-nav-sub-link">January 2017</a></li>
+                            <li><a href="#" class="main-nav-sub-link">April 2017</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="main-nav-link">About</a></li>
+                    <li><a href="#" class="main-nav-link">Work</a></li>
+                    <li><a href="#" class="main-nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content flex align-center justify-center">
+        <article class="post-card flex justify-center">
+            <img class="post-card-img img-fluid" src="imgs/001.jpg" alt="train">
+            <div class="card-main-content flex">
+                <h2 class="post-card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p class="post-card-desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                    </p><p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                    <button onclick="onToggleModal()" class="card-btn btn-round">Countinue Reading</button>
+                </div>
+        </article>
+        <article class="post-card flex justify-center">
+            <img class="post-card-img img-fluid" src="imgs/002.jpg" alt="sunset">
+            <div class="card-main-content flex">
+                <h2 class="post-card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p class="post-card-desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                    </p><p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                    <button onclick="onToggleModal()" class="card-btn btn-round">Countinue Reading</button>
+                </div>
+            </article>
+        <article class="post-card flex justify-center">
+            <img class="post-card-img img-fluid" src="imgs/003.jpg" alt="grain">
+            <div class="card-main-content flex">
+                <h2 class="post-card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p class="post-card-desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                    </p><p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                    <button onclick="onToggleModal()" class="card-btn btn-round">Countinue Reading</button>
+                </div>
+            </article>
+        <div class="posts-navigation flex align-center space-between">
+            <button class="btn-posts-nav">← Previous</button>
+            <button class="btn-posts-nav">Next →</button>
+        </div>
+    </main>
+
+    <footer class="main-footer full main-layout flex align-center justify-center">
+        <div class="main-logo">Blogin<span class="logo-dot">.</span></div>
+        <small>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at Pixelhint.com</small>
+        <nav class="social-nav">
+            <ul class="social-links clean-list flex align-center">
+                <li class="social-link facebook"><i class="fa-brands fa-facebook-f"></i></li>
+                <li class="social-link twitter"><i class="fa-brands fa-twitter"></i></li>
+                <li class="social-link behance"><i class="fa-brands fa-behance"></i></li>
+                <li class="social-link dribble"><i class="fa-brands fa-dribbble"></i></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- modal -->
+    <div class="modal-wrapper full flex align-center">
+        <div class="modal-content-wrapper modal-layout">
+            <button  onclick="onToggleModal()" class="modal-close-btn">✕</button>
+            <h1>Join us to get access to the latest stories!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dolorum atque ducimus reprehenderit aspernatur?</p>
+            <form class="email-sub-form flex">
+                <input type="email" placeholder="Enter your E-mail">
+                <button>Submit</button>
+            </form>
+            <!-- <button class="btn-square-grey">Close</button> -->
+        </div>
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
